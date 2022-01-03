@@ -168,6 +168,13 @@ a {
 .about-list:not(:last-child) {
   margin-right: 30px;
 }
+.about-picture {
+  /*  display: block; */
+  padding: 25px 100px;
+  background-color: yellow;
+  width: 270px;
+  height: 120px;
+}
 .about .about-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -225,6 +232,35 @@ a {
   line-height: 1.19;
   color: var(--secondary-text-color);
   text-align: center;
+}
+
+/*=====Иконки соц. сетей======*/
+
+.social-network {
+  display: flex;
+  justify-content: center;
+}
+.social-network li:not(:last-child) {
+  margin-right: 10px;
+}
+.social-network-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+.social-network-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.social-network-icon:hover svg {
+  fill: #fff;
+}
+.social-network-icon:hover {
+  border-radius: 50%;
+  background-color: #2196f3;
 }
 
 /*=====Футер======*/
