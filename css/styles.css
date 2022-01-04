@@ -1,10 +1,11 @@
 :root {
-  --primary-text-color: #212121;
-  --secondary-text-color: #757575;
   --accent-color: #2196f3;
-  --primary-bg-color: #ffffff;
-  --secondary-bg-color: #f5f4fa;
+  --primary-text-color: #212121;
   --addition-bg-color: #2f303a;
+  --secondary-text-color: #757575;
+  --icons-color: #afb1b8;
+  --secondary-bg-color: #f5f4fa;
+  --primary-bg-color: #ffffff;
   --reverse-text-color: #ffffff;
 }
 body {
@@ -55,6 +56,7 @@ a {
 }
 .section-title {
   margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -97,6 +99,7 @@ a {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -119,6 +122,7 @@ a {
 .contacts-link {
   display: flex;
   align-items: center;
+
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
@@ -134,33 +138,37 @@ a {
   fill: var(--accent-color);
 }
 .contacts-envelope {
-  margin-right: 10px;
-  fill: #757575;
   width: 16px;
   height: 12px;
+  margin-right: 10px;
+
+  fill: var(--secondary-text-color);
 }
 .contacts-smartphone {
-  margin-right: 10px;
-  fill: #757575;
   width: 10px;
   height: 16px;
+  margin-right: 10px;
+
+  fill: var(--secondary-text-color);
 }
 /*=====Герой=====*/
 
 .hero {
+  max-width: 1600px;
   padding: 200px 0;
+  margin: 0 auto;
+
   background-color: var(--addition-bg-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
-  max-width: 1600px;
-  margin: 0 auto;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .hero-title {
   width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -173,12 +181,14 @@ a {
   display: block;
   margin: 0 auto;
   padding: 10px 32px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--reverse-text-color);
   text-align: center;
+
   background-color: var(--accent-color);
   border: none;
   border-radius: 4px;
@@ -196,15 +206,17 @@ a {
 }
 .about-picture {
   display: block;
-  padding: 25px 100px;
-  background-color: #f5f4fa;
   width: 270px;
   height: 120px;
-  border-radius: 4px;
+  padding: 25px 100px;
   margin-bottom: 30px;
+
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
 }
 .about .about-title {
   margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   color: var(--primary-text-color);
@@ -212,6 +224,7 @@ a {
 }
 .about-text {
   width: 270px;
+
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
@@ -236,9 +249,9 @@ a {
   display: flex;
 }
 .team-card {
+  border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 .team-card:not(:last-child) {
   margin-right: 30px;
@@ -249,6 +262,7 @@ a {
 }
 .team-member {
   margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -281,14 +295,17 @@ a {
 .social-network-icon svg {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+
+  fill: var(--icons-color);
 }
-.social-network-icon:hover svg {
-  fill: #fff;
+.social-network-icon:hover svg,
+.social-network-icon:focus svg {
+  fill: #ffffff;
 }
-.social-network-icon:hover {
+.social-network-icon:hover,
+.social-network-icon:focus {
+  background-color: var(--accent-color);
   border-radius: 50%;
-  background-color: #2196f3;
 }
 
 /*=====Постояные клиенты======*/
@@ -303,21 +320,25 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #afb1b8;
   width: 170px;
   height: 92px;
+
+  border: 1px solid var(--icons-color);
   border-radius: 4px;
 }
 .clients-icon svg {
-  fill: #afb1b8;
   width: 106px;
   height: 60px;
+
+  fill: var(--icons-color);
 }
-.clients-icon:hover svg {
-  fill: #2196f3;
+.clients-icon:hover svg,
+.clients-icon:focus svg {
+  fill: var(--accent-color);
 }
-.clients-icon:hover {
-  border-color: #2196f3;
+.clients-icon:hover,
+.clients-icon:focus {
+  border-color: var(--accent-color);
 }
 /*=====Футер======*/
 
@@ -361,17 +382,18 @@ footer {
 }
 .join {
   margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 14px;
+  color: var(--reverse-text-color);
   text-transform: uppercase;
-  color: #ffffff;
 }
 .footer-social-network-icon {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
 .footer-social-network-icon svg {
-  fill: white;
+  fill: #ffffff;
 }
 /* Стили для portfolio.html */
 
@@ -387,7 +409,8 @@ footer {
   font-size: 16px;
   line-height: 1.62;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: #f5f4fa;
+
+  background-color: var(--secondary-bg-color);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -398,6 +421,7 @@ footer {
 .sorting-button:hover,
 .sorting-button:focus {
   color: var(--reverse-text-color);
+
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -413,6 +437,11 @@ footer {
   width: 370px;
   margin-top: 30px;
   margin-left: 30px;
+}
+.card-item:hover,
+.card-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .card-content {
   width: 370px;
