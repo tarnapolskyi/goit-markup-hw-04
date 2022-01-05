@@ -180,6 +180,7 @@ a {
     url(../images/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .hero-title {
   width: 696px;
@@ -222,7 +223,7 @@ a {
   margin-right: 30px;
 }
 .about-picture {
-  display: block;
+  display: flex;
   width: 270px;
   height: 120px;
   padding: 25px 100px;
@@ -231,6 +232,7 @@ a {
   background-color: var(--secondary-bg-color);
   border-radius: 4px;
 }
+
 .about .about-title {
   margin-bottom: 10px;
 
@@ -266,6 +268,7 @@ a {
   display: flex;
 }
 .team-card {
+  background-color: var(--primary-bg-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -287,6 +290,8 @@ a {
   text-align: center;
 }
 .team-role {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
   color: var(--secondary-text-color);
@@ -302,25 +307,25 @@ a {
 .social-network li:not(:last-child) {
   margin-right: 10px;
 }
-.social-network-icon {
+.social-network-picture {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
 }
-.social-network-icon svg {
+.social-network-icon {
   width: 20px;
   height: 20px;
 
   fill: var(--icons-color);
 }
-.social-network-icon:hover svg,
-.social-network-icon:focus svg {
-  fill: #ffffff;
-}
 .social-network-icon:hover,
 .social-network-icon:focus {
+  fill: #ffffff;
+}
+.social-network-picture:hover,
+.social-network-picture:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
 }
@@ -333,7 +338,7 @@ a {
 .clients-list li:not(:last-child) {
   margin-right: 30px;
 }
-.clients-icon {
+.clients-picture {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -343,18 +348,18 @@ a {
   border: 1px solid var(--icons-color);
   border-radius: 4px;
 }
-.clients-icon svg {
+.clients-icon {
   width: 106px;
   height: 60px;
 
   fill: var(--icons-color);
 }
-.clients-icon:hover svg,
-.clients-icon:focus svg {
-  fill: var(--accent-color);
-}
 .clients-icon:hover,
 .clients-icon:focus {
+  fill: var(--accent-color);
+}
+.clients-picture:hover,
+.clients-picture:focus {
   border-color: var(--accent-color);
 }
 /*=====Футер======*/
@@ -362,13 +367,16 @@ a {
 footer {
   background-color: var(--addition-bg-color);
 }
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .footer-address {
-  margin-top: 60px;
   margin-right: 70px;
-  margin-bottom: 60px;
 }
 
 .logo-badge-reverse {
@@ -393,10 +401,6 @@ footer {
 .feedback:focus {
   color: var(--accent-color);
 }
-.footer-social-network {
-  margin-top: 72px;
-  margin-bottom: 100px;
-}
 .join {
   margin-bottom: 20px;
 
@@ -405,11 +409,11 @@ footer {
   color: var(--reverse-text-color);
   text-transform: uppercase;
 }
-.footer-social-network-icon {
+.footer-social-network-picture {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
-.footer-social-network-icon svg {
+.footer-social-network-icon {
   fill: #ffffff;
 }
 /* Стили для portfolio.html */
@@ -425,7 +429,6 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   background-color: var(--secondary-bg-color);
   border: none;
@@ -455,8 +458,11 @@ footer {
   margin-top: 30px;
   margin-left: 30px;
 }
-.card-item:hover,
-.card-item:focus {
+.card-link {
+  display: block;
+}
+.card-link:hover,
+.card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -471,6 +477,7 @@ footer {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--primary-text-color);
 }
 .card-text {
   font-size: 16px;
