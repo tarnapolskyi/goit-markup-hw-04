@@ -232,7 +232,10 @@ a {
   background-color: var(--secondary-bg-color);
   border-radius: 4px;
 }
-
+.about-icon {
+  width: 70px;
+  height: 70px;
+}
 .about .about-title {
   margin-bottom: 10px;
 
@@ -313,19 +316,19 @@ a {
   justify-content: center;
   width: 44px;
   height: 44px;
+
+  fill: var(--icons-color);
 }
 .social-network-icon {
   width: 20px;
   height: 20px;
-
-  fill: var(--icons-color);
 }
 .social-network-icon:hover,
 .social-network-icon:focus {
-  fill: #ffffff;
 }
 .social-network-picture:hover,
 .social-network-picture:focus {
+  fill: #ffffff;
   background-color: var(--accent-color);
   border-radius: 50%;
 }
@@ -345,22 +348,18 @@ a {
   width: 170px;
   height: 92px;
 
+  fill: var(--icons-color);
   border: 1px solid var(--icons-color);
   border-radius: 4px;
 }
 .clients-icon {
   width: 106px;
   height: 60px;
-
-  fill: var(--icons-color);
-}
-.clients-icon:hover,
-.clients-icon:focus {
-  fill: var(--accent-color);
 }
 .clients-picture:hover,
 .clients-picture:focus {
   border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 /*=====Футер======*/
 
